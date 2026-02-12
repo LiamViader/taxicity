@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/porta_cotxe.mp3-32de95e0d168d1e2e3a87ad758acb09e.mp3str"
+
+[deps]
+
+source_file="res://Assets/sons/porta_cotxe.mp3"
+dest_files=[ "res://.import/porta_cotxe.mp3-32de95e0d168d1e2e3a87ad758acb09e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

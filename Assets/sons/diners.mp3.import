@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/diners.mp3-9f24224f4af00f4fcb6a9d4be31e8d08.mp3str"
+
+[deps]
+
+source_file="res://Assets/sons/diners.mp3"
+dest_files=[ "res://.import/diners.mp3-9f24224f4af00f4fcb6a9d4be31e8d08.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

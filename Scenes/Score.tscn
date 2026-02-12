@@ -1,0 +1,189 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Fonts/Gugi-Regular.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=2]
+size = 64
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 128
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 64
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.831373, 0.737255, 0.411765, 1 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.597656, 0.508113, 0.198441, 1 )
+
+[sub_resource type="Theme" id=5]
+Button/colors/font_color = Color( 0, 0, 0, 1 )
+Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+Button/colors/font_color_focus = Color( 0, 0, 0, 1 )
+Button/colors/font_color_hover = Color( 0.85098, 0.752941, 0.415686, 1 )
+Button/colors/font_color_pressed = Color( 0.180392, 0.156863, 0.0823529, 1 )
+Button/constants/hseparation = 2
+Button/fonts/font = null
+Button/styles/disabled = null
+Button/styles/focus = null
+Button/styles/hover = SubResource( 7 )
+Button/styles/normal = SubResource( 8 )
+Button/styles/pressed = SubResource( 9 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 48
+font_data = ExtResource( 3 )
+
+[node name="Score" type="CanvasLayer"]
+pause_mode = 2
+offset = Vector2( 512, 300 )
+scale = Vector2( 0.5, 0.5 )
+transform = Transform2D( 0.5, 0, 0, 0.5, 512, 300 )
+
+[node name="Punts2" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 138.0
+margin_top = -192.0
+margin_right = 278.0
+margin_bottom = -127.0
+grow_horizontal = 0
+custom_fonts/font = SubResource( 2 )
+align = 2
+
+[node name="Punts" type="Label" parent="."]
+modulate = Color( 0.85098, 0.752941, 0.415686, 1 )
+margin_left = 144.0
+margin_top = -192.0
+margin_right = 284.0
+margin_bottom = -127.0
+grow_horizontal = 0
+custom_fonts/font = SubResource( 2 )
+align = 2
+
+[node name="Title2" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = -398.0
+margin_top = -528.0
+margin_right = 327.0
+margin_bottom = -399.0
+custom_fonts/font = SubResource( 3 )
+text = "GAME OVER"
+
+[node name="Title" type="Label" parent="."]
+modulate = Color( 0.85098, 0.752941, 0.415686, 1 )
+margin_left = -384.0
+margin_top = -528.0
+margin_right = 341.0
+margin_bottom = -399.0
+custom_fonts/font = SubResource( 3 )
+text = "GAME OVER"
+
+[node name="Label4" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = -344.0
+margin_top = -192.0
+margin_right = -146.0
+margin_bottom = -127.0
+custom_fonts/font = SubResource( 4 )
+text = "Points"
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 0.85098, 0.752941, 0.415686, 1 )
+margin_left = -336.0
+margin_top = -192.0
+margin_right = -138.0
+margin_bottom = -127.0
+custom_fonts/font = SubResource( 4 )
+text = "Points"
+
+[node name="Diners2" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 136.0
+margin_top = -48.0
+margin_right = 276.0
+margin_bottom = 17.0
+grow_horizontal = 0
+custom_fonts/font = SubResource( 2 )
+align = 2
+
+[node name="Diners" type="Label" parent="."]
+modulate = Color( 0.85098, 0.752941, 0.415686, 1 )
+margin_left = 144.0
+margin_top = -48.0
+margin_right = 284.0
+margin_bottom = 17.0
+grow_horizontal = 0
+custom_fonts/font = SubResource( 2 )
+align = 2
+
+[node name="Label5" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = -344.0
+margin_top = -48.0
+margin_right = -146.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 4 )
+text = "Coins"
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color( 0.85098, 0.752941, 0.415686, 1 )
+margin_left = -336.0
+margin_top = -48.0
+margin_right = -138.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 4 )
+text = "Coins"
+
+[node name="Temps2" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = -8.0
+margin_top = 96.0
+margin_right = 272.0
+margin_bottom = 161.0
+grow_horizontal = 0
+custom_fonts/font = SubResource( 2 )
+align = 2
+
+[node name="Temps" type="Label" parent="."]
+modulate = Color( 0.85098, 0.752941, 0.415686, 1 )
+margin_top = 96.0
+margin_right = 280.0
+margin_bottom = 161.0
+grow_horizontal = 0
+custom_fonts/font = SubResource( 2 )
+align = 2
+
+[node name="Label6" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = -344.0
+margin_top = 96.0
+margin_right = -146.0
+margin_bottom = 161.0
+custom_fonts/font = SubResource( 4 )
+text = "Time"
+
+[node name="Label3" type="Label" parent="."]
+modulate = Color( 0.85098, 0.752941, 0.415686, 1 )
+margin_left = -336.0
+margin_top = 96.0
+margin_right = -138.0
+margin_bottom = 161.0
+custom_fonts/font = SubResource( 4 )
+text = "Time"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 96.0
+margin_top = 288.0
+margin_right = 339.0
+margin_bottom = 368.0
+theme = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "New Game"

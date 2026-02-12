@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sirena.mp3-a869418b996a24dd1e22f1491426da18.mp3str"
+
+[deps]
+
+source_file="res://Assets/sons/sirena.mp3"
+dest_files=[ "res://.import/sirena.mp3-a869418b996a24dd1e22f1491426da18.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

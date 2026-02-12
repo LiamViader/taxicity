@@ -1,0 +1,89 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Assets/Isometric City Pack/png/car_yellow_up_right.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Isometric City Pack/png/car_yellow_down_left.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Taxi.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Isometric City Pack/png/car_yellow_down_right.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Isometric City Pack/png/car_yellow_up_left.png" type="Texture" id=5]
+[ext_resource path="res://Scenes/Hud.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/sons/clic.mp3" type="AudioStream" id=7]
+[ext_resource path="res://Assets/sons/cotxe.mp3" type="AudioStream" id=8]
+[ext_resource path="res://Assets/sons/sirena.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Scenes/Store.tscn" type="PackedScene" id=10]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Avall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Dreta",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "Esquerra",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Amunt",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+
+[node name="Taxi" type="KinematicBody2D"]
+script = ExtResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 2, 2 )
+limit_left = -4600
+limit_top = -2600
+limit_right = 5000
+limit_bottom = 3100
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Esquerra"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Hud" parent="CanvasLayer" instance=ExtResource( 6 )]
+margin_left = 512.0
+margin_top = 300.0
+margin_right = 512.0
+margin_bottom = 300.0
+rect_scale = Vector2( 0.5, 0.5 )
+
+[node name="Llum" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 7 )
+volume_db = 10.0
+pitch_scale = 2.0
+
+[node name="Velocitat" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 8 )
+volume_db = -4.0
+pitch_scale = 0.4
+autoplay = true
+
+[node name="Sirena" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 9 )
+
+[node name="Store" parent="." instance=ExtResource( 10 )]
+offset = Vector2( 512, 300 )
+transform = Transform2D( 1, 0, 0, 1, 512, 300 )
+
+[connection signal="restar_diners" from="CanvasLayer/Hud" to="." method="_on_Hud_restar_diners"]

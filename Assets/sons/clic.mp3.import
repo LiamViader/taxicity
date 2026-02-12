@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/clic.mp3-ac64f55a36ca38c796dcb33926954478.mp3str"
+
+[deps]
+
+source_file="res://Assets/sons/clic.mp3"
+dest_files=[ "res://.import/clic.mp3-ac64f55a36ca38c796dcb33926954478.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

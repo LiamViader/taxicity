@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/aparicio_client.mp3-a9dbb669743971580cbab674b30078fe.mp3str"
+
+[deps]
+
+source_file="res://Assets/sons/aparicio_client.mp3"
+dest_files=[ "res://.import/aparicio_client.mp3-a9dbb669743971580cbab674b30078fe.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

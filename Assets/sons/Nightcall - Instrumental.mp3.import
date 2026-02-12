@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Nightcall - Instrumental.mp3-f2bc312f15baea116444b3ee8305ee91.mp3str"
+
+[deps]
+
+source_file="res://Assets/sons/Nightcall - Instrumental.mp3"
+dest_files=[ "res://.import/Nightcall - Instrumental.mp3-f2bc312f15baea116444b3ee8305ee91.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
