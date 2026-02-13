@@ -56,5 +56,3 @@ Check out the game in action here:
 2. Run the `Taxicity.exe` file.
 3. **Note for Windows users:** Since this is an unsigned open-source project, Windows SmartScreen may show a security warning. Click on *"More info"* and then *"Run anyway"* to start the game.
 
----
-Developed by **Liam Viader**
