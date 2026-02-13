@@ -1,10 +1,10 @@
-# 🚕 Taxicity - Arcade Taxi Game
+# Taxicity - Arcade Taxi Game
 
 **Taxicity** is a 2D arcade game developed with the **Godot Engine**. Take the wheel, manage your time, and optimize your routes to become the most efficient taxi driver in the city.
 
 ---
 
-## 🎮 How to Play
+## How to Play
 
 The objective is simple yet challenging: **Pick up passengers and drop them off at their destinations before time runs out.**
 
@@ -16,7 +16,7 @@ The objective is simple yet challenging: **Pick up passengers and drop them off 
 
 ---
 
-## ⌨️ Controls
+## Controls
 
 | Action | Key / Button |
 | :--- | :--- |
@@ -34,7 +34,7 @@ The objective is simple yet challenging: **Pick up passengers and drop them off 
 
 ---
 
-## 🛒 The Shop
+## The Shop
 
 Use the money earned from successful deliveries to upgrade your taxi:
 * **Speed & Acceleration:** Improve your car's performance to beat the clock.
@@ -42,7 +42,7 @@ Use the money earned from successful deliveries to upgrade your taxi:
 
 ---
 
-## 📺 Gameplay Video
+## Gameplay Video
 
 Check out the game in action here:
 
@@ -50,7 +50,7 @@ Check out the game in action here:
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 1. Download and extract the `.zip` file.
 2. Run the `Taxicity.exe` file.
